@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #787878;
+}
+.stick{
+    position: relative;
+    top: 5em;
+    left: 25%;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stick .head{
+    height: 10em;
+    width: 10em;
+    border: #000 solid thick;
+    border-radius: 50%;
+}
+.stick .body{
+    height: 15em;
+    width: 1.5em;
+    background-color: #000;
+}
+.stick .hand{
+    height: 10em;
+    width: 1.5em;
+    background-color: #000;
+    transform: rotate(50deg);
+    position: absolute;
+    top: 4cm;
+    left: 0.2cm;
+    border-bottom-right-radius: 50%;
+}
+.stick .hand.R{
+    height: 10em;
+    width: 1.5em;
+    background-color: #000;
+    transform: rotate(-50deg);
+    position: absolute;
+    top: 4cm;
+    left: 3cm;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 0%;
+}
+.stick .leg{
+    height: 11em;
+    width: 1.5em;
+    background-color: #000;
+    transform: rotate(40deg);
+    position: absolute;
+    top: 9.5cm;
+    left: 0.3cm;
+    border-bottom-right-radius: 50%;
+}
+.stick .leg.R{
+    height: 11em;
+    width: 1.5em;
+    background-color: #000;
+    transform: rotate(-40deg);
+    position: absolute;
+    top: 9.4cm;
+    left: 3.1cm;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 50%;
+}
+
+/* end stickman */
+
+.list{
+    background: linear-gradient(180deg, 
+                #004,
+                #1c0060 , 
+                darkblue ,
+                #004594 , 
+                #eeb5ff,
+                #e7b9ff ,
+                #e7b0cb,
+                #ffb3c0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25), -5px -5px 7px rgba(0,0,0,0.25), inset 2px 2px 5px rgba(255,255,255,0.25), inset -3px -3px 5px rgba(0,0,0,0.5);
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    top: 50%;
+    left: 60%;
+}
+.list h2{
+    text-transform: capitalize;
+    font-family: 'Courgette', cursive;
+    font-size: xxx-large;
+    margin-bottom: 25px;
+}
+.list .all-tasks .task{
+    background-color: #545787;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.list .all-tasks .task input:nth-child(1){
+    background-color: #fff;
+    border: #212121 solid 4em;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+.list .all-tasks .task span{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 5px;
+    text-transform: capitalize;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    caret-color: #212121;
+}
